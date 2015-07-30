@@ -65,16 +65,15 @@ item.pe_rm_armor_0.name=红物质头盔
 item.pe_rm_armor_1.name=红物质胸甲
 item.pe_rm_armor_2.name=红物质护腿
 item.pe_rm_armor_3.name=红物质靴子
-item.pe_gem_armor_0.name=深渊头盔
-item.pe_gem_armor_1.name=炼狱胸甲
-item.pe_gem_armor_2.name=重力护腿
-item.pe_gem_armor_3.name=飓风长靴
+item.pe_gem_armor_0.name=宝石头盔
+item.pe_gem_armor_1.name=宝石胸甲
+item.pe_gem_armor_2.name=宝石护腿
+item.pe_gem_armor_3.name=宝石靴子
 item.pe_arcana_ring.name=奥术指环
 item.pe_void_ring.name=虚空指环
 item.pe_zero_ring.name=零度指环
 item.pe_tome.name=炼金术秘卷
 item.pe_transmutation_tablet.name=便携式转化桌
-
 tile.pe_alchemy_chest.name=炼金术箱子
 tile.pe_interdiction_torch.name=禁止火把
 tile.pe_transmutation_stone.name=转化桌
@@ -96,9 +95,7 @@ tile.pe_fuel_block_0.name=炼金煤炭块
 tile.pe_fuel_block_1.name=莫比乌斯燃料块
 tile.pe_fuel_block_2.name=永恒燃料块
 tile.pe_dmPedestal.name=暗物质台座
-
 itemGroup.ProjectE=ProjectE
-
 achievement.phil_stone=炼金术师的挚友
 achievement.phil_stone.desc=用贤者之石开启你的炼金之旅!
 achievement.alch_chest=存储升级!
@@ -135,98 +132,78 @@ achievement.klein=能量电池
 achievement.klein.desc=储存EMC以备不时之需
 achievement.klein_big=大容量能量电池
 achievement.klein_big.desc=它能容得下整个宇宙
-
 pe.arcana.mode=模式: 
-pe.arcana.mode.0=零度
-pe.arcana.mode.1=烈焰
-pe.arcana.mode.2=丰收
-pe.arcana.mode.3=疾风
-pe.arcana.inactive=关闭!
-
-pe.archangel.pedestal1=射击附近的怪物
+pe.arcana.mode.0=零度凛冽
+pe.arcana.mode.1=炽然烈焰
+pe.arcana.mode.2=丰收女神
+pe.arcana.mode.3=狼破疾风
+pe.arcana.inactive=关闭
+pe.archangel.pedestal1=发射箭矢攻击周围的怪物
 pe.archangel.pedestal2=每%s射击一次
-
-pe.bhb.pedestal1=收集附近的掉落物
+pe.bhb.pedestal1=收集附近的掉落物品
 pe.bhb.pedestal2=可存入邻接的容器中
-
 pe.body.pedestal1=恢复玩家的饥饿度
-pe.body.pedestal2=每%s恢复半格饥饿值
-
+pe.body.pedestal2=每%s半格饥饿值
 pe.command.main.usage=/projecte <changelog, clearKnowledge, setEMC, reloadEMC, removeEMC, resetEMC>
-
 pe.command.changelog.uptodate=当前使用的ProjectE为最新版本.
 pe.command.clearknowledge.error=无法清空玩家 %s 的转化知识.
 pe.command.clearknowledge.notify=你的转化知识已被 %s 全部清空!
 pe.command.clearknowledge.playernotfound=未找到名为" %s "的玩家.
 pe.command.clearknowledge.success=成功清空玩家 %s 的转化知识.
 pe.command.clearknowledge.usage=/projecte clearKnowledge [username] (参数无法指向自己)
-
-pe.command.reload.started=正在更新注册的EMC值...
-pe.command.reload.success=更新完成!更新数据已发送至客户端.
-pe.command.reload.notice=当完成所有变更时，请重启或使用 "/projecte reloadEMC" 指令.
-
+pe.command.reload.started=正在更新注册的EMC值, 这将会带来一些延迟.
+pe.command.reload.success=更新完成! 已将数据发送至所有客户端.
+pe.command.reload.notice=当完成所有变更后，请重启游戏或使用 "/projecte reloadEMC" 指令.
 pe.command.remove.invaliditem=错误: 未找到物品" %s ".
 pe.command.remove.invalidmeta=错误: meta数据" %s "是无效的.
 pe.command.remove.success=成功移除 %s 的EMC值.
 pe.command.remove.usage=/projecte removeEMC <unlocalized | oredict name> [meta] (参数无法指向手持物件)
-
 pe.command.reset.invalidmeta=错误: meta数据" %s "是无效的.
-pe.command.reset.nochange=错误: " %s:%s "的EMC值未作任何修改.
+pe.command.reset.nochange=错误: " %s:%s "的EMC值未经任何变更.
 pe.command.reset.success=成功修改 %s 的EMC值.
 pe.command.reset.usage=/projecte resetEMC <unlocalized | oredict name> [meta] (参数无法指向手持物件)
-
 pe.command.set.invalidemc=错误: " %s "是一个无效的EMC值.
 pe.command.set.invaliditem=错误: 未找到物品" %s ".
 pe.command.set.invalidmeta=错误: meta数据" %s "是无效的.
 pe.command.set.success=已将 %s 的EMC值设定为 %s.
 pe.command.set.usage=/projecte setEMC [unlocalized | oredict name] [meta] [EMC value] 或 /projecte setEMC [EMC value] (参数指向手持物件)
-
 pe.darkpick.mode1=普通模式
 pe.darkpick.mode2=3x 竖直模式
 pe.darkpick.mode3=3x 横向模式
 pe.darkpick.mode4=3x 直线模式
-
 pe.divining.avgemc=平均EMC值: %s (共%s个方块)
 pe.divining.maxemc=最高EMC: %s
 pe.divining.secondmax=第二高EMC: %s
 pe.divining.thirdmax=第三高EMC: %s
-
 pe.dmfurnace.shortname=暗物质熔炉
 pe.rmfurnace.shortname=红物质熔炉
-
 pe.emc.emc_tooltip_prefix=EMC:
 pe.emc.maxgenrate_tooltip=最高充能效率:
 pe.emc.maxoutrate_tooltip=最高输出效率:
 pe.emc.maxstorage_tooltip=能量上限:
 pe.emc.name=EMC
 pe.emc.rate=EMC/s
-pe.emc.stackemc_tooltip_prefix=EMC总和:
-pe.emc.storedemc_tooltip=EMC存储:
+pe.emc.stackemc_tooltip_prefix=Stack EMC:
+pe.emc.storedemc_tooltip=Stored EMC:
 pe.emc.too_much=EMC能量已达到上限!
-
 pe.evertide.tooltip1=按[%s]键发射一颗潮汐宝珠
 pe.evertide.tooltip2=能提供无限水
 pe.evertide.tooltip3=右键填充流体储罐或炼药锅
 pe.evertide.tooltip4=使用无需消耗EMC
 pe.evertide.pedestal1=召唤暴风雨/雪
 pe.evertide.pedestal2=每%s激活一次
-
 pe.gem.disabled=关闭
 pe.gem.enabled=启用
-
-pe.gem.activate=启用炼狱套装被动技能
-pe.gem.deactivate=禁用炼狱套装被动技能
-
+pe.gem.activate=开启宝石护甲被动技能
+pe.gem.deactivate=关闭宝石护甲被动技能
 pe.gem.helm.lorename=深渊头盔
 pe.gem.chest.lorename=炼狱胸甲
 pe.gem.legs.lorename=重力护腿
 pe.gem.feet.lorename=飓风长靴
-
 pe.gem.nightvision_tooltip=夜视模式:
 pe.gem.nightvision.prompt=按[Shift+%s]键切换夜视模式
 pe.gem.stepassist_tooltip=自动跳跃:
 pe.gem.stepassist.prompt=按[%s]键切换自动跳跃
-
 pe.gemdensity.blacklist=黑名单
 pe.gemdensity.mode_switch=转换目标设定为: %s
 pe.gemdensity.tooltip1=不停地转换物品
@@ -235,47 +212,36 @@ pe.gemdensity.tooltip3=按[%s]键改变转换目标
 pe.gemdensity.tooltip4=右键设置黑名单或白名单
 pe.gemdensity.tooltip5=Shift右键开始或停止转换
 pe.gemdensity.whitelist=白名单
-
 pe.harvestgod.pedestal1=使周围的作物加速生长
-pe.harvestgod.pedestal2=并收割成熟的作物
+pe.harvestgod.pedestal2=并自动收割成熟的作物
 pe.harvestgod.pedestal3=每%s激活一次
-
 pe.ignition.pedestal1=燃烧附近的怪物
 pe.ignition.pedestal2=每%s激活一次
-
 pe.item.mode=模式
 pe.item.mode_switch=切换为 %s 模式
-
 pe.katar.mode1=虐杀敌对生物
 pe.katar.mode2=虐杀一切生物
-
 pe.key.armor_toggle=护甲效果
 pe.key.charge=充能
-pe.key.extra_function=其他功能
+pe.key.extra_function=其它功能
 pe.key.fire_projectile=发射宝珠
-pe.key.mode=转换模式
-
+pe.key.mode=切换模式
 pe.life.pedestal1=恢复生命与饥饿度
 pe.life.pedestal2=每%s恢复半格生命值及饥饿值
-
 pe.mind.pedestal1=将周围的经验球吸入念之宝石
-
 pe.misc.every_tick=/tick
 pe.misc.seconds=秒
 pe.misc.storedxp_tooltip=存储经验:
 pe.misc.wrenched_block=扳动方块!
-
 pe.morningstar.mode1=普通模式
 pe.morningstar.mode2=3x 竖直模式
 pe.morningstar.mode3=3x 横向模式
 pe.morningstar.mode4=3x 直线模式
-
 pe.pedestal.item_disabled=暗物质台座的功能已被禁止!
 pe.pedestal.on_pedestal=台座功能:
 pe.pedestal.shortname=暗物质台座
 pe.pedestal.tooltip1=Shift右键打开界面
 pe.pedestal.tooltip2=右击激活台座
-
 pe.philstone.mode1=正方体
 pe.philstone.mode2=平面
 pe.philstone.mode3=直线
@@ -283,44 +249,34 @@ pe.philstone.tooltip1=按[%s]键打开合成界面
 pe.philstone.tooltip2=可用于调整ProjectE中的方块:
 pe.philstone.tooltip3=左键改变方块朝向
 pe.philstone.tooltip4=Shift右键拆卸方块
-
 pe.redpick.mode1=普通模式
 pe.redpick.mode2=3x 竖直模式
 pe.redpick.mode3=3x 横向模式
 pe.redpick.mode4=3x 直线模式
-
 pe.redsword.mode1=虐杀敌对生物
 pe.redsword.mode2=虐杀一切生物
-
 pe.relay.mk1=反物质继电器 MKI
 pe.relay.mk2=反物质继电器 MKII
 pe.relay.mk3=反物质继电器 MKIII
-
 pe.repairtalisman.pedestal1=修复附近玩家携带的工具
 pe.repairtalisman.pedestal2=每%s修复1点耐久
-
 pe.server.high_alchemist=高级炼金术士
 pe.server.has_joined=进入服务器
-
 pe.soul.pedestal1=治疗附近的玩家
 pe.soul.pedestal2=每%s恢复半格生命值
-
-pe.swrg.pedestal1=雷击附近的怪物
+pe.swrg.pedestal1=召唤雷电攻击周围的怪物
 pe.swrg.pedestal2=每%s激活一次
-
 pe.timewatch.disabled=该物品已被管理员禁止!
 pe.timewatch.ff=加速时间流逝
 pe.timewatch.mode=怀表模式: %s
 pe.timewatch.mode_switch=怀表模式: %s
 pe.timewatch.off=关闭
 pe.timewatch.rw=加速时间倒流
-pe.timewatch.tooltip1=随心所欲的操控时间
+pe.timewatch.tooltip1=成为时间领主
 pe.timewatch.tooltip2=右键切换模式
-pe.timewatch.pedestal1=%d倍加快附近方块的刷新及运作速度
+pe.timewatch.pedestal1=%d倍加快附近方块更新与运行速度
 pe.timewatch.pedestal2=%.3f倍降低附近生物的活动速度
-
 pe.tome.tooltip1=放入转化桌可习得全部转化知识.
-
 pe.transmutation.already_using=有人正在使用这个转化桌!
 pe.transmutation.transmute=转化桌
 pe.transmutation.learned0=L
@@ -331,7 +287,6 @@ pe.transmutation.learned4=n
 pe.transmutation.learned5=e
 pe.transmutation.learned6=d
 pe.transmutation.learned7=!
-
 pe.transmutation.unlearned0=U
 pe.transmutation.unlearned1=n
 pe.transmutation.unlearned2=l
@@ -341,20 +296,16 @@ pe.transmutation.unlearned5=r
 pe.transmutation.unlearned6=n
 pe.transmutation.unlearned7=e
 pe.transmutation.unlearned8=d
-
 pe.update.available=ProjectE有可更新的版本! 版本号: %s
 pe.update.changelog=使用指令/projecte changelog查看更新日志.
 pe.update.getit=下载地址:
-
 pe.volcanite.tooltip1=按[%s]键发射一颗熔焰宝珠
 pe.volcanite.tooltip2=能提供无限岩浆
 pe.volcanite.tooltip3=右键填充流体储罐
 pe.volcanite.tooltip4=使用需消耗32EMC
 pe.volcanite.pedestal1=停止暴风雨/雪
 pe.volcanite.pedestal2=每%s激活一次
-
 pe.zero.pedestal1=熄灭实体上的火焰
 pe.zero.pedestal2=并冻结周围的一切
 pe.zero.pedestal3=每%s激活一次
-
 pe.debug.metainvalid.name=metadata参数设置无效
