@@ -61,6 +61,10 @@ dependencies {
 
     //compile "mcp.mobius.waila:Waila:1.5.7a_1.7.10"
     compile "com.cricketcraft.chisel:Chisel2:2.3.10.100:api"
+	
+    compile "codechicken:CodeChickenCore:1.7.10-1.0.4.29:dev"
+    compile "codechicken:CodeChickenLib:1.7.10-1.1.1.110:dev"
+    compile "codechicken:NotEnoughItems:1.7.10-1.0.4.83:dev"
 }
 
 processResources
@@ -81,6 +85,17 @@ processResources
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+}
+
+// Dev jar (deobfuscated)
+task devJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'dev'
+    version = "${project.version}"
+}
+
+artifacts {
+    archives devJar
 }
 
 idea.module.inheritOutputDirs = true
